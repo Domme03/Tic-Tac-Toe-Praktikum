@@ -1,0 +1,297 @@
+body {
+    position: center;
+    font-family: Verdana;
+    text-align: center;
+    background-color: #2a3986;
+    background: url(./img/BackgroundUltraWide.jpg);
+    background-position: top;
+}
+
+/* Canvas */
+
+canvas {
+    visibility: hidden; 
+    position: relative;
+    background: url(./img/711.jpg);
+    background-position: center;
+    background-size: 100vw;
+    top: 100px;
+    color: rgba(253, 0, 118, 0.74);
+    box-shadow: rgba(253, 0, 118, 0.74) 0px 30px 60px -12px inset, rgba(253, 0, 118, 0.74) 0px 18px 36px -18px inset;
+}
+
+canvas.show {
+    visibility: visible;
+    -webkit-animation:canvasAnimation 3s ;
+}
+
+@-webkit-keyframes canvasAnimation {
+    0% {-webkit-transform:scale(0.0);;left:0px; top: 0px;} 
+}
+
+/* Navigation Bar */
+
+.topnav {
+    color: #1d1d1d;
+    background: url(./img/Background.jpg);
+    box-shadow: rgba(0, 46, 253, 0.74) 0px 30px 60px -12px inset, rgba(253, 0, 118, 0.74) 0px 18px 36px -18px inset;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    color: #689ff1;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    color: rgb(255, 0, 0);
+}
+
+/* Notification + Animation */
+
+#wonXNotify {
+  visibility: hidden; 
+  min-width: 250px; 
+  margin-left: -125px;
+  background: url(./img/Stars.jpg);
+  box-shadow: rgba(253, 0, 118, 0.74) 0px 30px 60px -12px inset, rgba(253, 0, 118, 0.74) 0px 18px 36px -18px inset;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px; 
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+}
+  
+#wonXNotify.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+#wonONotify {
+    visibility: hidden; 
+    min-width: 250px; 
+    margin-left: -125px;
+    background: url(./img/Stars.jpg);
+    box-shadow: rgba(253, 0, 118, 0.74) 0px 30px 60px -12px inset, rgba(253, 0, 118, 0.74) 0px 18px 36px -18px inset;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px; 
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+}
+  
+#wonONotify.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+#drawNotify {
+    visibility: hidden; 
+    min-width: 250px;
+    margin-left: -125px;
+    background: url(./img/Stars.jpg);
+    box-shadow: rgba(253, 0, 118, 0.74) 0px 30px 60px -12px inset, rgba(253, 0, 118, 0.74) 0px 18px 36px -18px inset;
+    color: #fff; 
+    text-align: center; 
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+}
+#drawNotify.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+#FiveTimer {
+    visibility: hidden;
+    min-width: 250px; 
+    margin-left: -125px; 
+    background: url(./img/Stars.jpg);
+    box-shadow: rgba(253, 0, 118, 0.74) 0px 30px 60px -12px inset, rgba(253, 0, 118, 0.74) 0px 18px 36px -18px inset;
+    color: #fff; 
+    text-align: center; 
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+}
+  
+#FiveTimer.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+  
+#FourTimer {
+    visibility: hidden;
+    min-width: 250px; 
+    margin-left: -125px; 
+    background: url(./img/Stars.jpg);
+    box-shadow: rgba(253, 0, 118, 0.74) 0px 30px 60px -12px inset, rgba(253, 0, 118, 0.74) 0px 18px 36px -18px inset;
+    color: #fff; 
+    text-align: center; 
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+}
+  
+#FourTimer.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+  
+#ThirdTimer {
+    visibility: hidden;
+    min-width: 250px; 
+    margin-left: -125px; 
+    background: url(./img/Stars.jpg);
+    box-shadow: rgba(253, 0, 118, 0.74) 0px 30px 60px -12px inset, rgba(253, 0, 118, 0.74) 0px 18px 36px -18px inset;
+    color: #fff; 
+    text-align: center; 
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+}
+  
+#ThirdTimer.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+  
+#TwoTimer {
+    visibility: hidden;
+    min-width: 250px; 
+    margin-left: -125px; 
+    background: url(./img/Stars.jpg);
+    box-shadow: rgba(253, 0, 118, 0.74) 0px 30px 60px -12px inset, rgba(253, 0, 118, 0.74) 0px 18px 36px -18px inset;
+    color: #fff; 
+    text-align: center; 
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+}
+  
+#TwoTimer.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+#OneTimer {
+    visibility: hidden;
+    min-width: 250px; 
+    margin-left: -125px; 
+    background: url(./img/Stars.jpg);
+    box-shadow: rgba(253, 0, 118, 0.74) 0px 30px 60px -12px inset, rgba(253, 0, 118, 0.74) 0px 18px 36px -18px inset;
+    color: #fff; 
+    text-align: center; 
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+}
+  
+#OneTimer.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+/* Sqaure Used Notification + Animation */
+
+#SquareUsed {
+  visibility: hidden; 
+  min-width: 250px; 
+  margin-left: -125px;
+  background: url(./img/Stars.jpg);
+  box-shadow: rgba(253, 0, 118, 0.74) 0px 30px 60px -12px inset, rgba(253, 0, 118, 0.74) 0px 18px 36px -18px inset;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px; 
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 100px;
+}
+  
+#SquareUsed.show {
+    visibility: visible; 
+    -webkit-animation: fadein2 0.5s, fadeout2 0.5s 2.5s;
+    animation: fadein2 0.5s, fadeout2 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein2 {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 100px; opacity: 1;}
+}
+
+@keyframes fadein2 {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 100px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout2 {
+  from {bottom: 100px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout2 {
+  from {bottom: 100px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}

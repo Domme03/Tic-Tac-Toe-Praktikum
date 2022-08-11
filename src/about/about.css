@@ -1,0 +1,43 @@
+body {
+  font-family: Verdana;
+  background-color: #2a3986;
+  background: url(./img/Background.jpg);
+  background-position: top;
+
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 35px;
+}
+i {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    color: #1d1d1d;
+    background: url(./img/Stars.jpg);
+    box-shadow: rgba(253, 0, 118, 0.74) 0px 30px 60px -12px inset, rgba(253, 0, 118, 0.74) 0px 18px 36px -18px inset;
+    overflow: hidden;
+}
+  
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    color: white;
+  }

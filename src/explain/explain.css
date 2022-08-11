@@ -1,0 +1,100 @@
+body {
+  font-family: Verdana;
+  text-align: left;
+  background-color: #2a3986;
+  background: url(./img/BackgroundUltraWide.jpg);
+  background-position: top;
+
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 35px;
+}
+i {
+  color: #ffffff;
+  font-size: 25px;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    color: #1d1d1d;
+    background: url(./img/Stars.jpg);
+    box-shadow: rgba(253, 0, 118, 0.74) 0px 30px 60px -12px inset, rgba(253, 0, 118, 0.74) 0px 18px 36px -18px inset;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    color: white;
+  }
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#SquareUsed {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #2a3986; /* Black background color */
+    box-shadow: rgba(253, 0, 118, 0.74) 0px 30px 60px -12px inset, rgba(253, 0, 118, 0.74) 0px 18px 36px -18px inset;
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 100px; /* 30px from the bottom */
+  }
+  
+  /* Show the snackbar when clicking on a button (class added with JavaScript) */
+  #SquareUsed.show {
+    visibility: visible; /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein2 0.5s, fadeout2 0.5s 2.5s;
+    animation: fadein2 0.5s, fadeout2 0.5s 2.5s;
+  }
+
+ /*FADE/IN/OUT NOTIFY*/
+ /*FADE/IN/OUT NOTIFY*/
+ /*FADE/IN/OUT NOTIFY*/
+ /*FADE/IN/OUT NOTIFY*/
+ /*FADE/IN/OUT NOTIFY*/
+ /*FADE/IN/OUT NOTIFY*/
+
+  /* Animations to fade the snackbar in and out */
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }

@@ -1,0 +1,41 @@
+
+<!DOCTYPE HTML>
+
+<html>
+    <div class="topnav">
+        <a class="active" href="Start.html">Home</a>
+        <a onclick=canvas()>Tic Tac Toe</a>
+        <a href="./explain/explain.html">Explanation</a>
+        <a href="./about/about.html">About Me</a>
+      </div>
+    <head>
+        <script type="text/javascript" src="./main/main.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/line-awesome/dist/line-awesome/css/line-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="./main/main.css"/>
+    </head>
+    <body>
+        <canvas id="canvas0" width="250" height="250" style="border:1px solid violet" onclick="canvasClicked(0)"> </canvas>  <!-- Top Mid -->
+        <canvas id="canvas1" width="250" height="250" style="border:1px solid violet" onclick="canvasClicked(1)"> </canvas>  <!-- Top Mid -->
+        <canvas id="canvas2" width="250" height="250" style="border:1px solid violet" onclick="canvasClicked(2)"> </canvas>  <!-- Top Mid -->
+        <br>
+        <canvas id="canvas3" width="250" height="250" style="border:1px solid violet" onclick="canvasClicked(3)"> </canvas>  <!-- Middle Left -->
+        <canvas id="canvas4" width="250" height="250" style="border:1px solid violet" onclick="canvasClicked(4)"> </canvas>  <!-- Middle Mid -->
+        <canvas id="canvas5" width="250" height="250" style="border:1px solid violet" onclick="canvasClicked(5)"> </canvas>  <!-- Middle Right -->
+        <br>
+        <canvas id="canvas6" width="250" height="250" style="border:1px solid violet" onclick="canvasClicked(6)"> </canvas>  <!-- Bottom Left -->
+        <canvas id="canvas7" width="250" height="250" style="border:1px solid violet" onclick="canvasClicked(7)"> </canvas>  <!-- Bottom Mid -->
+        <canvas id="canvas8" width="250" height="250" style="border:1px solid violet" onclick="canvasClicked(8)"> </canvas>  <!-- Bottom Right -->
+    </body>
+    <br> 
+    
+    <!-- Notification Messages -->
+    <div id="wonXNotify">X has won the Game!</div>
+    <div id="wonONotify">O has won the Game!</div>
+    <div id="drawNotify">It's a draw!</div>
+    <div id="FiveTimer">Game is restarting in 5 Seconds!</div>
+    <div id="FourTimer">Game is restarting in 4 Seconds!</div>
+    <div id="ThirdTimer">Game is restarting in 3 Seconds!</div>
+    <div id="TwoTimer">Game is restarting in 2 Seconds!</div>
+    <div id="OneTimer">Game is restarting in 1 Seconds!</div>
+    <div id="SquareUsed">This square is already used!</div>
+</html>
